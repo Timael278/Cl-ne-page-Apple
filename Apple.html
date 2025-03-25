@@ -12,7 +12,8 @@
     }
 
     .iphone-seize{
-        background-color: black;
+        background: linear-gradient(to right, black, #7e4e3a, black);
+    margin: 0;
     }
 
     .menu{
@@ -28,6 +29,13 @@
         padding: 10px;
         text-align: center;
         z-index: 1000; /* Assure qu'il reste au-dessus des autres éléments */
+    }
+    .img-iphone-seize{
+    /* Dégradé sur le haut de l'image */
+    position: relative;
+    -webkit-mask-image: linear-gradient(to bottom, #7E4E3A, rgba(126, 78, 58, 0));
+    mask-image: linear-gradient(to bottom, #7E4E3A, rgba(126, 78, 58, 0));
+        height: 500px;
     }
 </style>
 
